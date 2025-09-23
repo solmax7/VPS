@@ -19,7 +19,7 @@
         "security": "reality",
         "realitySettings": {
           "publicKey": "eAUWQerZw4R5c1IhVCSDxwJuGV7Ak0jTDZ3szTasqVw",
-          "shortIds": ["sid1"],
+          "shortId": "sid1",
           "serverName": "www.vk.com"
         }
       }
