@@ -1,0 +1,34 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "24245d71-2587-480f-b714-b613b7cb2734"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "publicKey": "eAUWQerZw4R5c1IhVCSDxwJuGV7Ak0jTDZ3szTasqVw",
+          "shortIds": ["sid1"],
+          "serverName": "www.vk.com"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
