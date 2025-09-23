@@ -18,9 +18,10 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "publicKey": "eAUWQerZw4R5c1IhVCSDxwJuGV7Ak0jTDZ3szTasqVw",
-          "shortId": "sid1",
-          "serverName": "www.vk.com"
+          "publicKey": "InwPFsILERR0khFpKshlMBiNnj6AeSkSIww_cGLZQQ0",
+          "shortId": "z75BsPz_JDchSiYjms4J2Q",
+          "serverName": "www.vk.com",
+          "privateKey": "CC8125wDafEeItHgymnYbZ1wyilFj9T-2foPhQFlkHA"
         }
       }
     }
