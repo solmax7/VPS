@@ -18,10 +18,10 @@
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "publicKey": "InwPFsILERR0khFpKshlMBiNnj6AeSkSIww_cGLZQQ0",
-          "shortId": "z75BsPz_JDchSiYjms4J2Q",
+          "publicKey": "8KHPEGtzfal65V5saL4HAUv9O1zWNDl47q7RqZJnM08",
+          "shortId": "aCPnuKNoD_7nlYXSGq-66Jc-Y9OzgmBZR7FSU4C2qgM",
           "serverName": "www.vk.com",
-          "privateKey": "CC8125wDafEeItHgymnYbZ1wyilFj9T-2foPhQFlkHA"
+          "privateKey": "8KHPEGtzfal65V5saL4HAUv9O1zWNDl47q7RqZJnM08"
         }
       }
     }
