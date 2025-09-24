@@ -1,35 +1,37 @@
 {
-  "log": {
-    "level": "info",
-    "timestamp": true
-  },
+  "log": { "level": "info", "timestamp": true },
+  "dns": { "servers": ["1.1.1.1", "8.8.8.8"] },
   "inbounds": [
     {
       "port": 443,
       "protocol": "vless",
       "settings": {
-        "clients": [
-          {
-            "id": "24245d71-2587-480f-b714-b613b7cb2734"
-          }
-        ]
+        "clients":[{"id":"24245d71-2587-480f-b714-b613b7cb2734"}],
+        "decryption":"none"
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
+        "network":"tcp",
+        "security":"reality",
         "realitySettings": {
-          "publicKey": "8KHPEGtzfal65V5saL4HAUv9O1zWNDl47q7RqZJnM08",
-          "shortId": "AbCDefGhIjKlMnOp",
-          "serverName": "www.vk.com",
-          "privateKey": "8KHPEGtzfal65V5saL4HAUv9O1zWNDl47q7RqZJnM08"
+          "privateKey":"aJauJzmcuB7K06ahwfPRUr3yLMBXeXvtRUisZ6VHd30",
+          "serverName":"smax7.duckdns.org"
         }
       }
     }
   ],
   "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    }
-  ]
+    { "protocol": "freedom", "settings": {}, "tag": "direct" },
+    { "protocol": "dns", "settings": {}, "tag": "dns-out" }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type":"field",
+        "outboundTag":"dns-out",
+        "networks":["udp"],
+        "port":"53"
+      }
+    ]
+  }
 }
